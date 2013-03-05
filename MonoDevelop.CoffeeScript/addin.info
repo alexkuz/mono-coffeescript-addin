@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Addin 
+	namespace="MonoDevelop" 
+	id="CoffeeScript" 
+	name="CoffeeScript language binding" 
+	author="Kuzya" 
+	copyright="MIT/X11" 
+	url="http://coffeescript.org" 
+	description="Provides .coffee files syntax support." 
+	category="Language bindings" 
+	version="1.0">
+  <Dependencies>
+	<Addin id="Core" version="4.0"/>
+	<Addin id="Ide" version="4.0"/>
+	<Addin id="SourceEditor2" version="4.0"/>
+    	<Addin id="Refactoring" version="4.0"/>
+  </Dependencies>
+  <Runtime>
+    <Import assembly="MonoDevelop.CoffeeScript.dll" />
+  </Runtime>
+</Addin>

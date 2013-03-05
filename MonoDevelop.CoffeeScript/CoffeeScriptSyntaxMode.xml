@@ -1,0 +1,129 @@
+<!-- CoffeeScriptSyntaxMode.xml-->
+
+<SyntaxMode name="CoffeeScript" mimeTypes="text/coffeescript">
+	<Property name="LineComment">#</Property>
+	<Property name="BlockCommentStart">###</Property>
+	<Property name="BlockCommentEnd">###</Property>
+	<Property name="StringQuote">"</Property>
+	<Property name="StringQuote">'</Property>
+	
+	<Match color = "keyword.type">[-=]&gt;</Match>
+
+	<Span color = "comment.block" rule="Comment">
+		<Begin>###</Begin>
+		<End>###</End>
+	</Span>
+	
+	<EolSpan color = "comment" rule="Comment">#</EolSpan>
+
+	<Span color = "string.double" rule="String">
+		<Begin>"""</Begin>
+		<End>"""</End>
+	</Span>
+
+	<Span color = "string.other" rule="Regex">
+		<Begin>///</Begin>
+		<End>///</End>
+	</Span>
+	
+	<Span color = "string" escape='\' rule="String">
+		<Begin>"</Begin>
+		<End>"</End>
+	</Span>
+
+	<Span color = "string" escape='\' rule="String">
+		<Begin>&apos;</Begin>
+		<End>&apos;</End>
+	</Span>
+
+	<Span color = "text.preprocessor" rule="EmbeddedJS">
+		<Begin>`</Begin>
+		<End>`</End>
+	</Span>
+
+	<Match color = "constant.digit">CSharpNumber</Match>
+	
+	<Keywords color = "keyword.access">
+		<Word>@</Word>
+		<Word>this</Word>
+		<Word>super</Word>
+	</Keywords>
+	
+	<Keywords color = "keyword.operator">
+		<Word>new</Word>
+		<Word>typeof</Word>
+		<Word>in</Word>
+		<Word>is</Word>
+		<Word>isnt</Word>
+		<Word>and</Word>
+		<Word>or</Word>
+		<Word>of</Word>
+	</Keywords>
+	
+	<Keywords color = "keyword.selection">
+		<Word>else</Word>
+		<Word>if</Word>
+		<Word>then</Word>
+		<Word>when</Word>
+		<Word>unless</Word>
+		<Word>switch</Word>
+	</Keywords>
+	
+	<Keywords color = "keyword.iteration">
+		<Word>do</Word>
+		<Word>for</Word>
+		<Word>while</Word>
+		<Word>until</Word>
+	</Keywords>
+	
+	<Keywords color = "keyword.jump">
+		<Word>break</Word>
+		<Word>continue</Word>
+		<Word>return</Word>
+	</Keywords>
+	
+	<Keywords color = "keyword.exceptions">
+		<Word>try</Word>
+		<Word>throw</Word>
+		<Word>catch</Word>
+		<Word>finally</Word>
+	</Keywords>
+	
+	<Keywords color = "constant.language">
+		<Word>true</Word>
+		<Word>false</Word>
+		<Word>yes</Word>
+		<Word>on</Word>
+		<Word>no</Word>
+		<Word>off</Word>
+		<Word>null</Word>
+	</Keywords>
+		
+	<Keywords color = "keyword.type">
+		<Word>class</Word>
+		<Word>extends</Word>
+	</Keywords>
+	
+	<Rule name = "Comment">
+		<Keywords color="comment.keyword.todo" ignorecase="True">
+			<Word>TODO</Word>
+			<Word>FIXME</Word>
+			<Word>HACK</Word>
+			<Word>UNDONE</Word>
+		</Keywords>
+	</Rule>
+	
+	<Rule name = "EmbeddedJS">
+	</Rule>
+	
+	<Rule name = "Regex">
+		<EolSpan color = "comment">#</EolSpan>	
+	</Rule>
+	
+	<Rule name = "String">
+		<Span color = "keyword.access">
+			<Begin>#{</Begin>
+			<End>}</End>
+		</Span>
+	</Rule>
+</SyntaxMode>
