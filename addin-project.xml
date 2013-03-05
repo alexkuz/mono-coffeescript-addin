@@ -1,0 +1,7 @@
+<AddinProject appVersion="1.0">
+	<Project platforms="Mac Linux">
+		<AddinFile>MonoDevelop.CoffeeScript/bin/Release/MonoDevelop.CoffeeScript.dll</AddinFile>
+		<BuildFile>MonoDevelop.CoffeeScript/MonoDevelop.CoffeeScript.csproj</BuildFile>
+		<BuildConfiguration>Release</BuildConfiguration>
+	</Project>
+</AddinProject>
