@@ -67,7 +67,7 @@ namespace MonoDevelop.CoffeeScript
 
 		public ClrVersion[] GetSupportedClrVersions()
 		{
-			return new ClrVersion[] { ClrVersion.Net_1_1, ClrVersion.Net_2_0, ClrVersion.Clr_2_1, ClrVersion.Net_4_0 };
+			return new ClrVersion[] { ClrVersion.Net_1_1, ClrVersion.Net_2_0, ClrVersion.Clr_2_1, ClrVersion.Net_4_0, ClrVersion.Net_4_5 };
 		}
 
 		public System.CodeDom.Compiler.CodeDomProvider GetCodeDomProvider()

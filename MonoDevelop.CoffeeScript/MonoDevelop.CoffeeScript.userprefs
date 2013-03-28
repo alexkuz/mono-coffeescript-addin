@@ -1,22 +1,24 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../Downloads/monodevelop-3.0.3.5/src/core/Mono.Texteditor/Mono.TextEditor.Highlighting/Match.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CoffeeScriptLanguageBinding.cs">
     <Files>
-      <File FileName="CoffeeScriptLanguageBinding.cs" Line="1" Column="1" />
-      <File FileName="MonoDevelop.CoffeeScript.addin.xml" Line="28" Column="16" />
-      <File FileName="TestCoffeeScript/Main.cs" Line="14" Column="36" />
+      <File FileName="CoffeeScriptLanguageBinding.cs" Line="66" Column="4" />
+      <File FileName="TestCoffeeScript/Main.cs" Line="12" Column="29" />
       <File FileName="../../../Downloads/monodevelop-3.0.3.5/src/core/MonoDevelop.Ide/MonoDevelop.Ide.WebBrowser/IWebBrowser.cs" Line="1" Column="1" />
       <File FileName="../../../Downloads/monodevelop-3.0.3.5/src/core/Mono.Texteditor/Mono.TextEditor.Highlighting/SyntaxModeService.cs" Line="1" Column="1" />
       <File FileName="../../../Downloads/monodevelop-3.0.3.5/src/core/Mono.Texteditor/Mono.TextEditor.Highlighting/Keywords.cs" Line="1" Column="1" />
-      <File FileName="../../../Downloads/monodevelop-3.0.3.5/src/core/Mono.Texteditor/Mono.TextEditor.Highlighting/Match.cs" Line="83" Column="25" />
+      <File FileName="../../../Downloads/monodevelop-3.0.3.5/src/core/Mono.Texteditor/Mono.TextEditor.Highlighting/Match.cs" Line="1" Column="1" />
+      <File FileName="CoffeeScriptSyntaxMode.cs" Line="21" Column="4" />
+      <File FileName="CoffeeScriptParser.cs" Line="15" Column="1" />
+      <File FileName="MonoDevelop.CoffeeScript.addin.xml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Option id="ShowAllFiles" value="True" />
           <Node name="MonoDevelop.CoffeeScript" expanded="True">
+            <Node name="References" expanded="True" />
             <Node name="coffee" expanded="True" />
-            <Node name="CoffeeScriptSyntaxMode.xml" selected="True" />
+            <Node name="CoffeeScriptLanguageBinding.cs" selected="True" />
           </Node>
           <Node name="TestCoffeeScript" expanded="True" />
         </State>
@@ -28,7 +30,7 @@
         <State />
       </Pad>
       <Pad Id="ConnectionManagerPad">
-        <State expanded="True" selected="True" />
+        <State selected="True" />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
@@ -36,18 +38,18 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
-    <Watch file="../../../git/stampsy/stampsy-ipad/Stampsy/UI/ButtonWithLoginItem.cs" line="46" offsetX="316" offsetY="675" expression="this" liveUpdate="False" />
-    <Watch file="../../../git/stampsy/stampsy-ipad/Stampsy.Auth/AuthManager.cs" line="85" offsetX="381" offsetY="1110" expression="CurrentUser" liveUpdate="False" />
-    <Watch file="../../../git/stampsy/stampsy-ipad/KnightBus/WebViewJavaScriptBus.cs" line="152" offsetX="374" offsetY="2265" expression="messages" liveUpdate="False" />
-    <Watch file="../../../git/stampsy/stampsy-ipad/Stampsy/UI/Stamp/Editor/Grabbox/GrabboxTabBar.cs" line="18" offsetX="302" offsetY="255" expression="tabs" liveUpdate="False" />
-    <Watch file="../../../git/stampsy/stampsy-ipad/Stampsy/UI/UIHelper.cs" line="64" offsetX="345" offsetY="855" expression="view" liveUpdate="False" />
-    <Watch file="../../../git/stampsy/stampsy-ipad/InstaNet.MonoTouch/Client/InstaNetClient.User.Sync.cs" line="17" offsetX="381" offsetY="240" expression="request" liveUpdate="False" />
-    <Watch file="../../../git/stampsy/stampsy-ipad/RestSharp/RestSharp/RestClient.Sync.cs" line="107" offsetX="554" offsetY="1350" expression="httpResponse" liveUpdate="False" />
-    <Watch file="../../../git/stampsy/stampsy-ipad/InstaNet.MonoTouch/Client/InstaNetClient.User.Sync.cs" line="13" offsetX="835" offsetY="180" expression="_restClient" liveUpdate="False" />
-    <Watch file="../../../git/stampsy/stampsy-ipad/RestSharp/RestSharp/RestClient.cs" line="210" offsetX="266" offsetY="2220" expression="handler" liveUpdate="False" />
-    <Watch file="../../../git/stampsy/stampsy-ipad/Stampsy/UI/Kiosk/KioskViewController.cs" line="202" offsetX="741" offsetY="3000" expression="_pageWidths" liveUpdate="False" />
-    <Watch file="../../../git/stampsy/stampsy-ipad/Stampsy/UI/Profile/ButtonWithCounter.cs" line="24" offsetX="403" offsetY="345" expression="_counterLayer" liveUpdate="False" />
-    <Watch file="../../../git/stampsy/stampsy-ipad/Stampsy/UI/Utils/SimpleRichTextFormatter.cs" line="39" offsetX="381" offsetY="570" expression="s" liveUpdate="False" />
-    <Watch file="../../../git/stampsy/stampsy-ipad/Stampsy/UI/Notifications/NotificationAreaTableDelegate.cs" line="12" offsetX="734" offsetY="165" expression="indexPath" liveUpdate="False" />
+    <Watch file="../../stampsy/stampsy-ipad/Stampsy/UI/ButtonWithLoginItem.cs" line="46" offsetX="316" offsetY="675" expression="this" liveUpdate="False" />
+    <Watch file="../../stampsy/stampsy-ipad/Stampsy.Auth/AuthManager.cs" line="85" offsetX="381" offsetY="1110" expression="CurrentUser" liveUpdate="False" />
+    <Watch file="../../stampsy/stampsy-ipad/KnightBus/WebViewJavaScriptBus.cs" line="152" offsetX="374" offsetY="2265" expression="messages" liveUpdate="False" />
+    <Watch file="../../stampsy/stampsy-ipad/Stampsy/UI/Stamp/Editor/Grabbox/GrabboxTabBar.cs" line="18" offsetX="302" offsetY="255" expression="tabs" liveUpdate="False" />
+    <Watch file="../../stampsy/stampsy-ipad/Stampsy/UI/UIHelper.cs" line="64" offsetX="345" offsetY="855" expression="view" liveUpdate="False" />
+    <Watch file="../../stampsy/stampsy-ipad/InstaNet.MonoTouch/Client/InstaNetClient.User.Sync.cs" line="17" offsetX="381" offsetY="240" expression="request" liveUpdate="False" />
+    <Watch file="../../stampsy/stampsy-ipad/RestSharp/RestSharp/RestClient.Sync.cs" line="107" offsetX="554" offsetY="1350" expression="httpResponse" liveUpdate="False" />
+    <Watch file="../../stampsy/stampsy-ipad/InstaNet.MonoTouch/Client/InstaNetClient.User.Sync.cs" line="13" offsetX="835" offsetY="180" expression="_restClient" liveUpdate="False" />
+    <Watch file="../../stampsy/stampsy-ipad/RestSharp/RestSharp/RestClient.cs" line="210" offsetX="266" offsetY="2220" expression="handler" liveUpdate="False" />
+    <Watch file="../../stampsy/stampsy-ipad/Stampsy/UI/Kiosk/KioskViewController.cs" line="202" offsetX="741" offsetY="3000" expression="_pageWidths" liveUpdate="False" />
+    <Watch file="../../stampsy/stampsy-ipad/Stampsy/UI/Profile/ButtonWithCounter.cs" line="24" offsetX="403" offsetY="345" expression="_counterLayer" liveUpdate="False" />
+    <Watch file="../../stampsy/stampsy-ipad/Stampsy/UI/Utils/SimpleRichTextFormatter.cs" line="39" offsetX="381" offsetY="570" expression="s" liveUpdate="False" />
+    <Watch file="../../stampsy/stampsy-ipad/Stampsy/UI/Notifications/NotificationAreaTableDelegate.cs" line="12" offsetX="734" offsetY="165" expression="indexPath" liveUpdate="False" />
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
 </Properties>

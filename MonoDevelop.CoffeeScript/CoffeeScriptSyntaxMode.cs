@@ -19,8 +19,8 @@ namespace MonoDevelop.CoffeeScript
 
 		void Init ()
 		{
-			var provider = new ResourceXmlProvider (typeof (CoffeeScriptSyntaxMode).Assembly, "MonoDevelop.CoffeeScript.CoffeeScriptSyntaxMode.xml");
-    		using (var reader = provider.Open()) {
+			var provider = new ResourceStreamProvider (typeof (CoffeeScriptSyntaxMode).Assembly, "MonoDevelop.CoffeeScript.CoffeeScriptSyntaxMode.xml");
+    		using (var reader = provider.Open ()) {
 				var baseMode = SyntaxMode.Read (reader);
 
 				this.rules = new System.Collections.Generic.List<Rule> (baseMode.Rules);

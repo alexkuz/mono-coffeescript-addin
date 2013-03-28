@@ -3,10 +3,11 @@ using MonoDevelop.Ide.TypeSystem;
 
 namespace MonoDevelop.CoffeeScript
 {
-	public class CoffeeScriptParser : AbstractTypeSystemParser
+	public class CoffeeScriptParser : TypeSystemParser
 	{
-		public CoffeeScriptParser ()
+		public override ParsedDocument Parse (bool storeAst, string fileName, System.IO.TextReader content, MonoDevelop.Projects.Project project = null)
 		{
+			throw new NotImplementedException ();
 		}
 	}
 }

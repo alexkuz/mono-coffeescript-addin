@@ -21,6 +21,6 @@ Global
 		{4990A591-EBA9-4675-956D-9034E4B4B48B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = TestCoffeeScript\TestCoffeeScript.csproj
+		StartupItem = MonoDevelop.CoffeeScript.csproj
 	EndGlobalSection
 EndGlobal
