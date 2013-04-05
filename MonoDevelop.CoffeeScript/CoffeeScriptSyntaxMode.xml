@@ -7,49 +7,49 @@
 	<Property name="StringQuote">"</Property>
 	<Property name="StringQuote">'</Property>
 	
-	<Match color = "keyword.type">[-=]&gt;</Match>
+	<Match color = "Keyword(Type)">[-=]&gt;</Match>
 
-	<Span color = "comment.block" rule="Comment">
+	<Span color = "Comment(Block)" rule="Comment">
 		<Begin>###</Begin>
 		<End>###</End>
 	</Span>
 	
-	<EolSpan color = "comment" rule="Comment">#</EolSpan>
+	<EolSpan color = "Comment(Line)" rule="Comment">#</EolSpan>
 
-	<Span color = "string.double" rule="String">
+	<Span color = "String(Escape)" rule="String">
 		<Begin>"""</Begin>
 		<End>"""</End>
 	</Span>
 
-	<Span color = "string.other" rule="Regex">
+	<Span color = "String" rule="Regex">
 		<Begin>///</Begin>
 		<End>///</End>
 	</Span>
 	
-	<Span color = "string" escape='\' rule="String">
+	<Span color = "String" escape='\' rule="String">
 		<Begin>"</Begin>
 		<End>"</End>
 	</Span>
 
-	<Span color = "string" escape='\' rule="String">
+	<Span color = "String" escape='\' rule="String">
 		<Begin>&apos;</Begin>
 		<End>&apos;</End>
 	</Span>
 
-	<Span color = "text.preprocessor" rule="EmbeddedJS">
+	<Span color = "Preprocessor" rule="EmbeddedJS">
 		<Begin>`</Begin>
 		<End>`</End>
 	</Span>
 
-	<Match color = "constant.digit">CSharpNumber</Match>
+	<Match color = "Number">CSharpNumber</Match>
 	
-	<Keywords color = "keyword.access">
+	<Keywords color = "Keyword(Access)">
 		<Word>@</Word>
 		<Word>this</Word>
 		<Word>super</Word>
 	</Keywords>
 	
-	<Keywords color = "keyword.operator">
+	<Keywords color = "Keyword(Operator)">
 		<Word>new</Word>
 		<Word>typeof</Word>
 		<Word>in</Word>
@@ -60,7 +60,7 @@
 		<Word>of</Word>
 	</Keywords>
 	
-	<Keywords color = "keyword.selection">
+	<Keywords color = "Keyword(Selection)">
 		<Word>else</Word>
 		<Word>if</Word>
 		<Word>then</Word>
@@ -69,27 +69,27 @@
 		<Word>switch</Word>
 	</Keywords>
 	
-	<Keywords color = "keyword.iteration">
+	<Keywords color = "Keyword(Iteration)">
 		<Word>do</Word>
 		<Word>for</Word>
 		<Word>while</Word>
 		<Word>until</Word>
 	</Keywords>
 	
-	<Keywords color = "keyword.jump">
+	<Keywords color = "Keyword(Jump)">
 		<Word>break</Word>
 		<Word>continue</Word>
 		<Word>return</Word>
 	</Keywords>
 	
-	<Keywords color = "keyword.exceptions">
+	<Keywords color = "Keyword(Exception)">
 		<Word>try</Word>
 		<Word>throw</Word>
 		<Word>catch</Word>
 		<Word>finally</Word>
 	</Keywords>
 	
-	<Keywords color = "constant.language">
+	<Keywords color = "User Types(Value types)">
 		<Word>true</Word>
 		<Word>false</Word>
 		<Word>yes</Word>
@@ -99,13 +99,13 @@
 		<Word>null</Word>
 	</Keywords>
 		
-	<Keywords color = "keyword.type">
+	<Keywords color = "Keyword(Type)">
 		<Word>class</Word>
 		<Word>extends</Word>
 	</Keywords>
 	
 	<Rule name = "Comment">
-		<Keywords color="comment.keyword.todo" ignorecase="True">
+		<Keywords color="Comment Tag" ignorecase="True">
 			<Word>TODO</Word>
 			<Word>FIXME</Word>
 			<Word>HACK</Word>
@@ -117,11 +117,11 @@
 	</Rule>
 	
 	<Rule name = "Regex">
-		<EolSpan color = "comment">#</EolSpan>	
+		<EolSpan color = "Comment(Line)">#</EolSpan>	
 	</Rule>
 	
 	<Rule name = "String">
-		<Span color = "keyword.access">
+		<Span color = "Keyword(Access)">
 			<Begin>#{</Begin>
 			<End>}</End>
 		</Span>
