@@ -8,12 +8,12 @@
 	url="http://coffeescript.org" 
 	description="Provides .coffee files syntax support." 
 	category="Language bindings" 
-	version="1.0">
+	version="5.10">
   <Dependencies>
-	<Addin id="Core" version="4.0"/>
-	<Addin id="Ide" version="4.0"/>
-	<Addin id="SourceEditor2" version="4.0"/>
-    	<Addin id="Refactoring" version="4.0"/>
+	<Addin id="Core" version="5.10"/>
+	<Addin id="Ide" version="5.10"/>
+	<Addin id="SourceEditor2" version="5.10"/>
+    <Addin id="Refactoring" version="5.10"/>
   </Dependencies>
   <Runtime>
     <Import assembly="MonoDevelop.CoffeeScript.dll" />
