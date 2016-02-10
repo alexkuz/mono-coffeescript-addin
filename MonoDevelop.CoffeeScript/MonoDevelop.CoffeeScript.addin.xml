@@ -1,52 +1,34 @@
-<Addin namespace   = "MonoDevelop"
-    id          = "CoffeeScript"
-    name        = "CoffeeScript Language Binding"
-    author      = "Kuzya"
-    copyright   = "MIT/X11"
-    url         = "http://coffeescript.org"
-    description = "Provides .coffee files syntax support."
-    category    = "Language bindings"
-    version     = "1.0">
-    <Runtime>
-    	<Import assembly="MonoDevelop.CoffeeScript.dll" />
-    </Runtime>
-    <Dependencies>
-	<Addin id="Core" version="4.0"/>
-	<Addin id="Ide" version="4.0"/>
-	<Addin id="SourceEditor2" version="4.0"/>
-    	<Addin id="Refactoring" version="4.0"/>
-    </Dependencies>
-	<Extension path = "/MonoDevelop/Ide/FileFilters">
-        <FileFilter id = "CoffeeScript"
-                    insertbefore="AllFiles"
-                    _label = "CoffeeScript Source Files"
-                    extensions = "*.coffee"/>
-    </Extension>
-        
-	<Extension path = "/MonoDevelop/ProjectModel/LanguageBindings">
-    	<LanguageBinding id  = "CoffeeScript" supportedextensions = ".coffee" class = "MonoDevelop.CoffeeScript.CoffeeScriptLanguageBinding" />
-    </Extension>
-    
-    <Extension path = "/MonoDevelop/Core/StockIcons">
-      	<StockIcon stockid = "md-coffeescript-file" resource = "MonoDevelop.CoffeeScript.FileIcon" />
-    </Extension>    
-    
-    <Extension path = "/MonoDevelop/Core/MimeTypes">
-      <MimeType id="text/coffeescript" _description="CoffeeScript source code" icon="md-coffeescript-file" isText="true">
-        <File pattern="*.coffee" />
-      </MimeType>
-    </Extension>
-        
-	<Extension path = "/MonoDevelop/SourceEditor2/CustomModes">
-    	<SyntaxMode mimeTypes="text/coffeescript" class="MonoDevelop.CoffeeScript.CoffeeScriptSyntaxMode"/>
-  	</Extension>
-
-  	<Extension path="/MonoDevelop/SourceEditor2/SyntaxModes">
-    	<Templates resource="MonoDevelop.CoffeeScript.CoffeeScriptSyntaxMode.xml" />
-  	</Extension>
-  	
-	<!--Extension path="/MonoDevelop/TypeSystem/Parser">
-    	<Parser class="MonoDevelop.CoffeeScript.CoffeeScriptParser"  mimeType = "text/coffeescript" />
-  	</Extension-->
-  
+<Addin namespace="MonoDevelop" id="CoffeeScript" name="CoffeeScript Language Binding" author="Kuzya" copyright="MIT/X11" url="http://coffeescript.org" description="Provides .coffee files syntax support." category="Language bindings" version="5.10">
+  <Runtime>
+    <Import assembly="MonoDevelop.CoffeeScript.dll" />
+  </Runtime>
+  <Dependencies>
+    <Addin id="Core" version="5.10" />
+    <Addin id="Ide" version="5.10" />
+    <Addin id="SourceEditor2" version="5.10" />
+    <Addin id="Refactoring" version="5.10" />
+  </Dependencies>
+  <Extension path="/MonoDevelop/Ide/FileFilters">
+    <FileFilter id="CoffeeScript" insertbefore="AllFiles" _label="CoffeeScript Source Files" extensions="*.coffee" />
+  </Extension>
+  <Extension path="/MonoDevelop/ProjectModel/LanguageBindings">
+    <LanguageBinding id="CoffeeScript" supportedextensions=".coffee" class="MonoDevelop.CoffeeScript.CoffeeScriptLanguageBinding" />
+  </Extension>
+  <Extension path="/MonoDevelop/Core/StockIcons">
+    <StockIcon stockid="md-coffeescript-file" resource="MonoDevelop.CoffeeScript.FileIcon" />
+  </Extension>
+  <Extension path="/MonoDevelop/Core/MimeTypes">
+    <MimeType id="text/coffeescript" _description="CoffeeScript source code" icon="md-coffeescript-file" isText="true">
+      <File pattern="*.coffee" />
+    </MimeType>
+  </Extension>
+  <Extension path="/MonoDevelop/SourceEditor2/CustomModes">
+    <SyntaxMode mimeTypes="text/coffeescript" class="MonoDevelop.CoffeeScript.CoffeeScriptSyntaxMode" />
+  </Extension>
+  <Extension path="/MonoDevelop/SourceEditor2/SyntaxModes">
+    <Templates resource="MonoDevelop.CoffeeScript.CoffeeScriptSyntaxMode.xml" />
+  </Extension>
+  <!--Extension path="/MonoDevelop/TypeSystem/Parser">
+      <Parser class="MonoDevelop.CoffeeScript.CoffeeScriptParser"  mimeType = "text/coffeescript" />
+    </Extension-->
 </Addin>
